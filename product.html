@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Lyceum Product Page</title>
+    </head>
+		
+	<link rel="stylesheet" href="css/productstyle.css">
+
+	<script>
+	
+		window.onscroll = function() {
+			scrollFunction()
+		}
+		
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("scroll-up").classList.add("show");
+			} else {
+				document.getElementById("scroll-up").classList.remove("show");
+			}
+		}
+		
+		function scrollToTop() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+
+		function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+
+</script>
+
+	<main>
+        <section>
+            <header>
+				
+				<div class="logo">
+					<img src="images/logo.png" alt="Logo of Lion Head and text 'Lyceum'" width="22%;" height="60vh;">
+				</div>
+				<nav>
+					<ul>
+					  <li><a href="index.html">Home</a></li>
+					  <li><a href="product.html">Products</a></li>
+					  <li><a href="gallery.html">Gallery</a></li>
+					  <li><a href="about-us.html">About Us</a></li>
+					  <li><a href="contact-us.html">Contact Us</a></li>
+					</ul>
+				  </nav>
+
+				  <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+					<ul class="mobile-menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="product.html">Products</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="about-us.html">About Us</a></li>
+						<li><a href="contact-us.html">Contact Us</a></li>
+					</ul>
+
+            </header>
+        </section>
+		
+		<section>
+		
+			<div class="banner"><img src="images/product-page-banner.png" alt="Shirt with Lyceum text and lion head"></div>
+	
+		</section>
+
+	<div class="content">
+
+		<h1>Our collection</h1>
+	<br>
+		<section>
+        
+		<div class="product">
+			<img src="images/short-sleeve-shirt.jpg" alt="Grey Short Sleeve Shirt">
+			<p>Short Sleeve Shirt</p>
+			<p class="product-price">R310</p>
+		  </div>
+		  
+		  <div class="product">
+			<img src="images/joggers-sweat-pants.jpg" alt="Black Jogger Sweat Pants">
+			<p>Jogger Sweat Pants</p>
+			<p class="product-price">R250</p>
+		  </div>
+		  
+		  <div class="product">
+			<img src="images/sleeveless-hoodie.jpg" alt="Maroon Sleeveless Hoodie">
+			<p>Sleeveless Hoodie</p>
+			<p class="product-price">R340</p>
+		  </div>
+
+		  <div class="product">
+			<img src="images/full-sleeve-shirt.jpg" alt="Red Full Sleeve T-shirt">
+			<p>Full Sleeve T-shirt</p>
+			<p class="product-price">R320</p>
+		  </div>
+
+		  <div class="product">
+			<img src="images/grey-gym-pant.jpg" alt="Grey Jogger Pants">
+			<p> Jogger Pants</p>
+			<p class="product-price">R260</p>
+		  </div>
+
+		  <div class="product">
+			<img src="images/black-pants.jpg" alt="Blank Sweat Pants">
+			<p>Sweat Pants</p>
+			<p class="product-price">R250</p>
+		  </div>
+
+		  <div class="product">
+			<img src="images/french-terry-sweatsuit.jpeg" alt="Pink Sweatsuit">
+			<p>Sweat Suit</p>
+			<p class="product-price">R370</p>
+		  </div>
+
+		  <div class="product">
+			<img src="images/velour-tracksuit.jpg" alt="Velvet Velour Tracksuit">
+			<p>Velour Tracksuit</p>
+			<p class="product-price">R450</p>
+		  </div>
+
+		  <div class="product">
+			<img src="images/grey-training-shorts.jpeg" alt="Grey Training Shorts">
+			<p>Anti-Wrinkle Training Shorts</p>
+			<p class="product-price">R240</p>
+		  </div>
+		</section>
+
+	</div>
+
+	</main>
+	
+	<button id="scroll-up" onclick="scrollToTop()">&#8593;</button> 
+	
+    <footer>
+		<p>
+			<script>
+				var theDate=new Date()
+				
+				var theModifiedDate=new Date(document.lastModified)
+				document.write(theModifiedDate.toDateString())
+			</script>
+			
+		<br>
+			&copy; 2023 | Lyceum | All rights reserved. | United we pump
+		</p>
+	</footer>
+          
+</body>
+</html>
